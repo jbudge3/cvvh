@@ -41,8 +41,12 @@ main {
   position: fixed;
   background-color: white;
   text-align: right;
-  padding: 20px;
+  padding: 0 20px;
   width: 100%;
+}
+
+#burger-menu-items p {
+  margin: 1.5em 0;
 }
 
 .toggle-burger {
@@ -80,6 +84,10 @@ main {
 
 @media (min-width: 600px) {
   #hamburger {
+    display: none;
+  }
+
+  #burger-menu-items {
     display: none;
   }
 
