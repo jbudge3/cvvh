@@ -8,7 +8,7 @@ function toggleBurgerMenu() {
     burgerMenuItems.className = " ";
     hamburger.setAttribute("fill", "#A00000");
   } else {
-    burgerMenuItems.className += "toggle-burger"
+    burgerMenuItems.className = "toggle-burger"
     hamburger.setAttribute("fill", "green");
   }
 }

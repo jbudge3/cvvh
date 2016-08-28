@@ -80,6 +80,36 @@ main {
   max-width: 390px;
 }
 
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid .5px #e3e3e3;
+}
+
+.overview-item img {
+  height: 70px;
+  margin: 4% 10%;
+}
+
+.overview-link {
+  padding-left: 5%;
+}
+
+.overview-link p {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+
  /* styles at 600px min */
 
 @media (min-width: 600px) {
@@ -103,6 +133,27 @@ main {
   .intro {
     font-size: 1.2em;
     line-height: 1.5em;
+  }
+
+  .overview {
+    flex-direction: row;
+  }
+
+  .overview-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overview-item img {
+    margin: 10%;
+    height: 200px;
+  }
+
+  .overview-link {
+    padding: 0;
+  }
+
+  .overview-link p {
   }
 }
 
