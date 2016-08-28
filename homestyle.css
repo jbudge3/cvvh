@@ -31,10 +31,22 @@ main {
   top: 6%
 }
 
-.hamburger {
+#hamburger {
   position: absolute;
   right: 3%;
   top: 20%;
+}
+
+#burger-menu-items {
+  position: fixed;
+  background-color: white;
+  text-align: right;
+  padding: 20px;
+  width: 100%;
+}
+
+.toggle-burger {
+  display: none;
 }
 
 .menu-items {
@@ -67,7 +79,7 @@ main {
  /* styles at 600px min */
 
 @media (min-width: 600px) {
-  .hamburger {
+  #hamburger {
     display: none;
   }
 
