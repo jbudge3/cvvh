@@ -1,61 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="cvvh">
   <head>
     <meta charset="utf-8">
     <title>Country View Veterinary Hospital - Serving Utah County</title>
-    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+      <!-- MAIN HEADER FOR EVERY VIEW -->
     <header class="main-header">
       <img class="logo" src="./img/logo-resized-h130.png" alt="Country View Logo"/>
       <svg onClick="toggleBurgerMenu();" id="hamburger" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="green">
         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
       </svg>
       <section class="menu-items">
-        <p>Home</p>
-        <p>Services</p>
-        <p>Our Staff</p>
-        <p>Contact Us</p>
+        <a href="#" ui-sref="home">Home</a>
+        <a href="#" ui-sref="services">Services</a>
+        <a href="#" ui-sref="staff">Our Staff</a>
+        <a href="#" ui-sref="contact">Contact Us</a>
       </section>
     </header>
     <section id="burger-menu-items" class="toggle-burger">
-      <p>Home</p>
-      <p>Services</p>
-      <p>Our Staff</p>
-      <p>Contact Us</p>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Our Staff</a>
+        <a href="#">Contact Us</a>
     </section>
+        <!-- UI-VIEW -->
+
     <main>
-      <section class="pic-info">
-        <!-- picture of puppy -->
-        <p class="intro">Country View Veterinary Hospital has been serving Utah County since 1996. We offer high-quality medical, dental, and surgical procedures for your pet. <br />Call or come in today!</p>
-      </section>
-      <section class="overview">
-        <div class="overview-item">
-          <img src="./img/cat-circle.png" />
-          <div class="overview-link">
-            <p>Services</p>
-          </div>
-        </div>
-        <div class="overview-item">
-          <img src="./img/Scott-Leiter-Circle.png" />
-          <div class="overview-link">
-            <p>Our Staff</p>
-          </div>
-        </div>
-        <div class="overview-item">
-          <img src="./img/clinic-circle.png" />
-          <div class="overview-link">
-            <p>Contact Us</p>
-          </div>
-        </div>
-      </section>
+        <ui-view></ui-view>
+    </main>
 
-  </main>
+        <!-- MAIN FOOTER FOR EVERY VIEW -->
   <footer>
-
+      <div class="emergency-info">
+          <p>We're open Monday through Friday, 8:00 AM to 5:30 PM. If your pet needs care outside of those hours, or in case of <strong>emergency</strong>, call Utah Veterinary Center at <a href="tel:1-801-871-0600">(801) 871-0600</a>.</p>
+      </div>
+      <div class="aaha-info">
+			<a target="_blank" href="http://www.healthypet.com">
+				<img src="./img/aaha.png" alt="aaha logo" class="aaha-logo">
+			</a>
+			<p class="aaha-summary">Country View Veterinary Hospital has been AAHA accredited since 1996 (21029). To learn more about why this is so important, please visit <a target="_blank" href="http://www.healthypet.com">www.HealthyPet.com</a></p>
+		</div>
+        <div class="copyright-address">
+			<p class="footer-copyright">&copy; 2016 Country View Veterinary Hospital</p>
+			<p class="footer-address">582 W. Pacific Dr., American Fork, UT 84003</p>
+		</div>
   </footer>
-  <script type="text/javascript" src="code.js"></script>
+
+  <!-- CDN Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <!-- Local Scripts -->
+  <script type="text/javascript" src="./js/code.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/controllers/mainCtrl.js"></script>
   </body>
 </html>

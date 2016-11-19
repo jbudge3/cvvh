@@ -13,12 +13,16 @@ main {
   margin: 0 auto;
 }
 
+footer {
+    max-width: 1100px;
+    margin: auto;
+}
+
 /* mobile styles */
 
 .main-header {
   height: 85px;
   display: flex;
-  align-items: center;
   position: relative;
   max-width: 1100px;
   margin: auto;
@@ -38,15 +42,25 @@ main {
 }
 
 #burger-menu-items {
-  position: fixed;
   background-color: white;
   text-align: right;
   padding: 0 20px;
   width: 100%;
 }
 
-#burger-menu-items p {
+#burger-menu-items a:link {
   margin: 1.5em 0;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+#burger-menu-items a:visited {
+    color: black;
+}
+
+#burger-menu-items a:active {
+    color: #A70000;
 }
 
 .toggle-burger {
@@ -57,6 +71,23 @@ main {
   display: none;
   width: 65%;
   font-size: 1.1em;
+}
+
+.menu-items a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-items a:visited {
+    color: black;
+}
+
+.menu-items a:hover {
+    color: #A70000;
+}
+
+.menu-items a:active {
+    color: #A70000;
 }
 
 .pic-info {
@@ -90,7 +121,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: solid .5px #e3e3e3;
+  border-bottom: .5px solid #bfbfbf;
 }
 
 .overview-item img {
@@ -102,11 +133,53 @@ main {
   padding-left: 5%;
 }
 
-.overview-link p {
+.summary-title {
   color: green;
   font-weight: bold;
   font-size: 1.2em;
 }
+
+.summary-text {
+    display: none;
+    max-width: 220px;
+    border: .5px solid #bfbfbf;
+    padding: 10px;
+    font-size: 1em;
+    color: black;
+}
+
+.emergency-info {
+    background-color: #E21836;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 1.2em;
+}
+
+.aaha-info {
+    background-color: #B0B0B0;
+    padding: 20px;
+    text-align: center;
+}
+
+.aaha-logo {
+    width: 200px;
+}
+
+.aaha-summary {
+    border: solid 1px white;
+    padding: 10px;
+}
+
+.copyright-address {
+    background-color: #606060;
+    color: white;
+    font-size: .7em;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
 
 
 
@@ -124,10 +197,9 @@ main {
   .menu-items {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     position: absolute;
     right: 0;
-    top: 15%;
+    padding-top: 30px;
   }
 
   .intro {
@@ -137,11 +209,17 @@ main {
 
   .overview {
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .overview a {
+      text-decoration: none;
   }
 
   .overview-item {
     flex-direction: column;
     text-align: center;
+    border: none;
   }
 
   .overview-item img {
@@ -155,11 +233,48 @@ main {
 
   .overview-link p {
   }
+
+  .summary-text {
+      display: inline-block;
+  }
+
+  .aaha-info {
+      text-align: left;
+  }
+
+  .aaha-logo {
+      display: inline-block;
+  }
+
+  .aaha-summary {
+      display:inline-block;
+      max-width: 60%;
+      float: right;
+      margin: 0 5% 0 auto;
+  }
+
+  .copyright-address {
+      text-align: left;
+  }
+
+  .footer-copyright {
+      display: inline-block;
+  }
+
+  .footer-address {
+      display:inline-block;
+      float: right;
+  }
+  /*END OF 600 PX MEDIA QUERY*/
 }
 
 @media (min-width: 800px) {
 
   .pic-info {
     height: 300px;
+  }
+
+  .aaha-summary {
+      margin: 0 10% 0 auto;
   }
 }
