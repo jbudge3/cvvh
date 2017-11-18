@@ -21,18 +21,19 @@ footer {
 /* mobile styles */
 
 .main-header {
-  height: 85px;
-  display: flex;
-  position: relative;
-  max-width: 1100px;
-  margin: auto;
+    border-bottom: 1px solid #bfbfbf;
+    height: 85px;
+    display: flex;
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .logo {
-  height: 75px;
-  position: absolute;
-  left: 3%;
-  top: 6%
+    height: 75px;
+    position: absolute;
+    left: 3%;
+    top: 6%
 }
 
 .request-refill {
@@ -69,23 +70,23 @@ footer {
 }
 
 #hamburger {
-  position: absolute;
-  right: 3%;
-  top: 20%;
+    position: absolute;
+    right: 3%;
+    top: 20%;
 }
 
 #burger-menu-items {
-  background-color: white;
-  text-align: right;
-  padding: 0 20px;
-  width: 100%;
+    background-color: white;
+    text-align: right;
+    padding: 0 20px;
+    width: 100%;
 }
 
 #burger-menu-items a:link {
-  margin: 1.5em 0;
-  display: block;
-  text-decoration: none;
-  color: black;
+    margin: 1.5em 0;
+    display: block;
+    text-decoration: none;
+    color: black;
 }
 
 #burger-menu-items a:visited {
@@ -97,13 +98,13 @@ footer {
 }
 
 .toggle-burger {
-  display: none;
+    display: none;
 }
 
 .menu-items {
-  display: none;
-  width: 65%;
-  font-size: 1.1em;
+    display: none;
+    width: 65%;
+    font-size: 1.1em;
 }
 
 .menu-items a:link {
@@ -127,52 +128,52 @@ footer {
 }
 
 .pic-info {
-  background: url(./img/puppy-edited.jpg) center no-repeat;
-  background-size: cover;
-  height: 250px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    background: url(./img/puppy-edited.jpg) center no-repeat;
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .intro {
-  display: inline-block;
-  width: 46%;
-  margin: 2%;
-  color: white;
-  background-color: rgba(166, 166, 166, 0.6);
-  padding: 2%;
-  line-height: 1.1em;
-  max-width: 390px;
+    display: inline-block;
+    width: 46%;
+    margin: 2%;
+    color: white;
+    background-color: rgba(166, 166, 166, 0.6);
+    padding: 2%;
+    line-height: 1.1em;
+    max-width: 390px;
 }
 
 .overview {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .overview-item {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: .5px solid #bfbfbf;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: .5px solid #bfbfbf;
 }
 
 .overview-item img {
-  height: 70px;
-  margin: 4% 10%;
+    height: 70px;
+    margin: 4% 10%;
 }
 
 .overview-link {
-  padding-left: 5%;
+    padding-left: 5%;
 }
 
 .summary-title {
-  color: green;
-  font-weight: bold;
-  font-size: 1.2em;
+    color: green;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .summary-text {
@@ -246,85 +247,85 @@ footer {
     .request-refill {
         left: 173px;
     }
-  #hamburger {
-    display: none;
-  }
+    #hamburger {
+        display: none;
+    }
 
-  #burger-menu-items {
-    display: none;
-  }
+    #burger-menu-items {
+        display: none;
+    }
 
-  .menu-items {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    right: 0;
-    padding-top: 30px;
-  }
+    .menu-items {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        right: 0;
+        padding-top: 30px;
+    }
 
-  .intro {
-    font-size: 1.2em;
-    line-height: 1.5em;
-  }
+    .intro {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
 
-  .overview {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+    .overview {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
-  .overview a {
-      text-decoration: none;
-  }
+    .overview a {
+        text-decoration: none;
+    }
 
-  .overview-item {
-    flex-direction: column;
-    text-align: center;
-    border: none;
-  }
+    .overview-item {
+        flex-direction: column;
+        text-align: center;
+        border: none;
+    }
 
-  .overview-item img {
-    margin: 10%;
-    height: 200px;
-  }
+    .overview-item img {
+        margin: 10%;
+        height: 200px;
+    }
 
-  .overview-link {
-    padding: 0;
-  }
+    .overview-link {
+        padding: 0;
+    }
 
-  .overview-link p {
-  }
+    .overview-link p {
+    }
 
-  .summary-text {
-      display: inline-block;
-  }
+    .summary-text {
+        display: inline-block;
+    }
 
-  .aaha-info {
-      text-align: left;
-  }
+    .aaha-info {
+        text-align: left;
+    }
 
-  .aaha-logo {
-      display: inline-block;
-  }
+    .aaha-logo {
+        display: inline-block;
+    }
 
-  .aaha-summary {
-      display:inline-block;
-      max-width: 60%;
-      float: right;
-      margin: 0 5% 0 auto;
-  }
+    .aaha-summary {
+        display:inline-block;
+        max-width: 60%;
+        float: right;
+        margin: 0 5% 0 auto;
+    }
 
-  .copyright-address {
-      text-align: left;
-  }
+    .copyright-address {
+        text-align: left;
+    }
 
-  .footer-copyright {
-      display: inline-block;
-  }
+    .footer-copyright {
+        display: inline-block;
+    }
 
-  .footer-address {
-      display:inline-block;
-      float: right;
-  }
+    .footer-address {
+        display:inline-block;
+        float: right;
+    }
   /*END OF 600 PX MEDIA QUERY*/
 }
 
@@ -333,11 +334,11 @@ footer {
         left: 190px;
     }
 
-  .pic-info {
-    height: 300px;
-  }
+    .pic-info {
+        height: 300px;
+    }
 
-  .aaha-summary {
-      margin: 0 10% 0 auto;
-  }
+    .aaha-summary {
+        margin: 0 10% 0 auto;
+    }
 }

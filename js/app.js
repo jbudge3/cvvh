@@ -23,6 +23,12 @@ angular.module('cvvh', ['ui.router'])
                 url: '/contact-us',
                 templateUrl: './views/contact.html',
                 controller: 'mainCtrl'
+            })
+
+            .state('refill', {
+                url: '/refill',
+                templateUrl: './views/refill.html',
+                controller: 'mainCtrl'
             });
 
         $urlRouterProvider
