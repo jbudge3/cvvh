@@ -149,6 +149,7 @@ footer {
     padding: 10px;
     font-size: 1em;
     color: black;
+    text-decoration: none;
 }
 
 .emergency-info {
@@ -157,6 +158,26 @@ footer {
     text-align: center;
     padding: 5px 20px;
     font-size: 1.2em;
+}
+
+.phone:link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.phone:visited {
+    color: #fff;
+    font-weight: bold;
+}
+
+.phone:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.phone:active {
+    color: #fff;
+    font-weight: bold;
 }
 
 .aaha-info {
