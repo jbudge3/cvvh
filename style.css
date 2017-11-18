@@ -35,6 +35,39 @@ footer {
   top: 6%
 }
 
+.request-refill {
+    background-color: #fff;
+    border: 1px solid #e21836;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 12px;
+    left: 160px;
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    width: 100px;
+}
+
+.request-refill:link {
+    color: black;
+    text-decoration: none;
+}
+
+.request-refill:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.request-refill:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.request-refill:active {
+    color: black;
+    text-decoration: none;
+}
+
 #hamburger {
   position: absolute;
   right: 3%;
@@ -210,6 +243,9 @@ footer {
  /* styles at 600px min */
 
 @media (min-width: 600px) {
+    .request-refill {
+        left: 173px;
+    }
   #hamburger {
     display: none;
   }
@@ -293,6 +329,9 @@ footer {
 }
 
 @media (min-width: 800px) {
+    .request-refill {
+        left: 190px;
+    }
 
   .pic-info {
     height: 300px;
