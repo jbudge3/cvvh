@@ -15,7 +15,7 @@ main {
 
 footer {
     max-width: 1100px;
-    margin: auto;
+    margin:  30px auto 0;
 }
 
 /* mobile styles */
@@ -79,14 +79,17 @@ footer {
 }
 
 .menu-items a:visited {
+    text-decoration: none;
     color: black;
 }
 
 .menu-items a:hover {
+    text-decoration: none;
     color: #A70000;
 }
 
 .menu-items a:active {
+    text-decoration: none;
     color: #A70000;
 }
 
