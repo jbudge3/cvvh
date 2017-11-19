@@ -1,0 +1,13 @@
+<section class="staff-container">
+    <h1>Our Incredible Staff</h1>
+
+    <div class="staff-info">
+        <div ng-repeat="staff in staffArray">
+            <img src="{{ staff.imgUrl }}" alt="{{ staff.name }}" />
+            <div class="bio-container">
+                <h2 class="name">{{ staff.name }}</h2>
+                <p ng-repeat="par in staff.pars">{{ par }}</p>
+            </div>
+        </div>
+    </div>
+</section>
