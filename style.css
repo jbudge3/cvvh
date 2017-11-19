@@ -260,6 +260,55 @@ footer {
     width: 230px;
 }
 
+.clinic-fullsize {
+    width: 100%;
+}
+
+.contact-title {
+    color: #e21836;
+    text-align: center;
+}
+
+.details-container {
+    padding: 0 20px;
+}
+
+.details h2 {
+    color: green;
+}
+
+.contact-phone:link {
+    color: black;
+}
+
+.contact-phone:visited {
+    color: black;
+}
+
+.contact-phone:hover {
+    color: black;
+}
+
+.contact-phone:active {
+    color: black;
+}
+
+.facebook:link {
+    color: green;
+}
+
+.facebook:visited {
+    color: green;
+}
+
+.facebook:hover {
+    color: green;
+}
+
+.facebook:active {
+    color: green;
+}
+
 
  /* styles at 600px min */
 
@@ -364,6 +413,20 @@ footer {
 
     .retriever {
         width: 350px;
+    }
+
+    .details-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .details {
+        width: 50%;
+    }
+
+    .map {
+        width: 50%;
     }
   /*END OF 600 PX MEDIA QUERY*/
 }
