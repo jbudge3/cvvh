@@ -77,6 +77,7 @@ footer {
 
 #burger-menu-items {
     background-color: white;
+    border-bottom: 1px solid #dbdbdb;
     text-align: right;
     padding: 0 20px;
     width: 100%;
@@ -309,6 +310,33 @@ footer {
     color: green;
 }
 
+.staff-title {
+    color: #e21836;
+    text-align: center;
+}
+
+.staff-img-container {
+    text-align: center;
+}
+
+.staff-img {
+    width: 150px;
+}
+
+.staff-name {
+    text-align: center;
+}
+
+.bio-container {
+    padding: 0 30px;
+}
+
+.staff-bottom-border {
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 auto 20px;
+    width: 70%;
+}
+
 
  /* styles at 600px min */
 
@@ -428,6 +456,26 @@ footer {
     .map {
         width: 50%;
     }
+
+    .staff-loop {
+        align-items: center;
+        display: flex;
+        padding: 30px 0;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .staff-bottom-border {
+        display: none;
+    }
+
+    .staff-name {
+        text-align: left;
+    }
+
+    .staff-img {
+        width: auto;
+    }
+
   /*END OF 600 PX MEDIA QUERY*/
 }
 
